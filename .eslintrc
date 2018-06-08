@@ -86,8 +86,6 @@ module.exports = {
       "node": {
         "extensions": [
           ".js",
-          ".android.js",
-          ".ios.js",
         ]
       }
     },
@@ -102,8 +100,5 @@ module.exports = {
     "FormData": false,
     "sinon": true,
     "jest": true,
-  },
-  "env": {
-    "mocha": true
   },
 }

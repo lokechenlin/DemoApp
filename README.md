@@ -27,6 +27,7 @@ Follow https://facebook.github.io/react-native/docs/getting-started.html
     yarn add --dev eslint-plugin-react-native
     yarn add --dev eslint-plugin-json
     yarn add --dev eslint-config-airbnb
+    yarn add --dev eslint-plugin-flowtype
     yarn add --dev flow-bin
     yarn add prop-types
     Copying the .eslintrc
