@@ -10,7 +10,10 @@ Follow https://facebook.github.io/react-native/docs/getting-started.html
     Adding README.md
     Changing .vscode/settings.json
 
-# Setup ESLint
+# Setup ESLint & Decide flowType or TypeScript
+    - FlowType is more relevant to "JavaScript with type annotations."
+    - Since React and FlowType from Facebook, theoritically work better with React.
+    - However, TypeScript is more popular.
     yarn add --dev eslint
     yarn add --dev babel-core
     yarn add --dev babel-eslint
@@ -24,7 +27,10 @@ Follow https://facebook.github.io/react-native/docs/getting-started.html
     yarn add --dev eslint-plugin-react-native
     yarn add --dev eslint-plugin-json
     yarn add --dev eslint-config-airbnb
+    yarn add --dev flow-bin
+    yarn add prop-types
     Copying the .eslintrc
+
 
 # Setup Navigation:
 Follow https://reactnavigation.org/docs/en/getting-started.html
