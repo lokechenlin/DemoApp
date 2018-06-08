@@ -1,0 +1,109 @@
+module.exports = {
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "react-native",
+    "flowtype",
+    "json"
+  ],
+  "rules": {
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 2,
+    "react-native/no-color-literals": 2,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+        ]
+      }
+    ],
+    "indent": [
+      "error",
+      4
+    ],
+    "react/jsx-indent": [
+      2,
+      4
+    ],
+    "react/jsx-indent-props": [
+      2,
+      4
+    ],
+    "react-native/no-color-hex": 0,
+    "max-len": [
+      2,
+      150
+    ],
+    "react/prefer-stateless-function": 0,
+    "flowtype/define-flow-type": 2,
+    "flowtype/require-parameter-type": [
+      2,
+      {
+        "excludeArrowFunctions": "expressionsOnly"
+      }
+    ],
+    "flowtype/require-return-type": [
+      2,
+      "always",
+      {
+        "annotateUndefined": "never",
+        "excludeArrowFunctions": "expressionsOnly"
+      }
+    ],
+    "flowtype/space-after-type-colon": [
+      2,
+      "always"
+    ],
+    "flowtype/type-id-match": [
+      2,
+      "^([A-Z][a-z0-9]+)+Type$"
+    ],
+    "flowtype/space-before-type-colon": [
+      2,
+      "never"
+    ],
+    "flowtype/use-flow-type": 2,
+    "flowtype/valid-syntax": 2,
+    "react/sort-comp": [
+      2,
+      {
+        order: [
+            'state',
+            'props',
+            'static-methods',
+            'lifecycle',
+            'everything-else',
+            'render',
+        ],
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".android.js",
+          ".ios.js",
+        ]
+      }
+    },
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "globals": {
+    "expect": true,
+    "__DEV__": true,
+    "fetch": false,
+    "FormData": false,
+    "sinon": true,
+    "jest": true,
+  },
+  "env": {
+    "mocha": true
+  },
+}
