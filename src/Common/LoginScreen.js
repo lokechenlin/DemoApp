@@ -3,13 +3,15 @@ import { View, Text } from 'react-native';
 
 export default class LoginScreen extends React.Component {
 
+    componentWillMount() {
+        throw 'AAA';
+    }
 
-
-  render() {
-    return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Login Screen</Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+                <Text>Login Screen</Text>
+            </View>
+        );
+    }
 }
