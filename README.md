@@ -36,4 +36,8 @@ Follow https://facebook.github.io/react-native/docs/getting-started.html
 Follow https://reactnavigation.org/docs/en/getting-started.html
     yarn add react-navigation
 
+    Problem: this.props.navigation facing eslint propsType validation issue
+    Solution: Add the eslintrc
+        "react/prop-types": [1, { "ignore": "navigation", "customValidators": "" }]
+
 
