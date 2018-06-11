@@ -32,7 +32,6 @@ Follow https://facebook.github.io/react-native/docs/getting-started.html
     yarn add prop-types
     Copying the .eslintrc
 
-
 # Setup Navigation:
 Follow https://reactnavigation.org/docs/en/getting-started.html
     yarn add react-navigation

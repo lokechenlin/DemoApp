@@ -1,4 +1,4 @@
-module.exports = {
+{
   "parser": "babel-eslint",
   "extends": "airbnb",
   "plugins": [
@@ -16,7 +16,7 @@ module.exports = {
       {
         "extensions": [
           ".js",
-          ".jsx",
+          ".jsx"
         ]
       }
     ],
@@ -70,14 +70,14 @@ module.exports = {
     "react/sort-comp": [
       2,
       {
-        order: [
-            'state',
-            'props',
-            'static-methods',
-            'lifecycle',
-            'everything-else',
-            'render',
-        ],
+        "order": [
+            "state",
+            "props",
+            "static-methods",
+            "lifecycle",
+            "everything-else",
+            "render"
+        ]
       }
     ]
   },
@@ -85,7 +85,7 @@ module.exports = {
     "import/resolver": {
       "node": {
         "extensions": [
-          ".js",
+          ".js"
         ]
       }
     },
@@ -99,6 +99,6 @@ module.exports = {
     "fetch": false,
     "FormData": false,
     "sinon": true,
-    "jest": true,
-  },
+    "jest": true
+  }
 }
