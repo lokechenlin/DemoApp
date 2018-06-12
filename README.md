@@ -41,3 +41,13 @@ Follow https://reactnavigation.org/docs/en/getting-started.html
         "react/prop-types": [1, { "ignore": "navigation", "customValidators": "" }]
 
 
+# Folder Structure
+Refer to https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0
+
+# Journey:
+- Navigation
+- Define Folder Structure
+- General Error Handling
+- Authentication
+
+
