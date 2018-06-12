@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "postinstall": "react-native-port-patcher --new-port 8088",
     "test": "jest"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "eslint-plugin-react-native": "^3.2.1",
     "flow-bin": "^0.74.0",
     "jest": "23.1.0",
+    "react-native-port-patcher": "^1.0.3",
     "react-test-renderer": "16.3.1"
   },
   "jest": {
