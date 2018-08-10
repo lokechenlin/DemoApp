@@ -13,3 +13,5 @@ const Navigator = createBottomTabNavigator({
 });
 
 export default Navigator;
+
+// https://stackoverflow.com/questions/46088695/how-to-refresh-in-react-navigation

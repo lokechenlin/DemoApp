@@ -35,6 +35,8 @@ const styles = StyleSheet.create({
     },
 });
 
+const date = new Date();
+
 class ErrorScreen extends React.Component {
     props: PropsType
 
@@ -44,6 +46,7 @@ class ErrorScreen extends React.Component {
                 <View style={styles.contentView}>
                     <Text style={styles.title}>Error Found</Text>
                     <Text style={styles.subTitle}>Error Details</Text>
+                    <Text style={styles.subTitle}>{date.toString()}</Text>
                 </View>
                 <Button
                     style={styles.button}
