@@ -44,10 +44,16 @@ Follow https://reactnavigation.org/docs/en/getting-started.html
 # Folder Structure
 Refer to https://medium.com/the-react-native-log/organizing-a-react-native-project-9514dfadaa0
 
+# Error Handling
+https://github.com/master-atul/react-native-exception-handler
+
 # Journey:
 - Navigation
 - Define Folder Structure
 - General Error Handling
-- Authentication
+-- Authentication
 
 
+
+# Best practise
+- https://medium.freecodecamp.org/react-pattern-centralized-proptypes-f981ff672f3b
