@@ -1,27 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     View,
     Text,
-    Image,
     StyleSheet,
 } from 'react-native';
 
-import Button from './../Common/Button';
-import { img } from './../../res/img/images';
-import I18n from './../../res/localization/strings';
-import Theme from './../../res/Theme';
+import Button from './../../components/Button';
 
 type PropsType = {
     onRetry: Object,
-    errorType: string,
-    errorPage: string,
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: Theme.backgroundColor,
-        marginTop: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    contentView: {
+        marginTop: 48,
     },
     title: {
         fontSize: 20,
@@ -30,46 +27,32 @@ const styles = StyleSheet.create({
     },
     subTitle: {
         fontSize: 16,
-        marginTop: 16,
-        color: Theme.greyText,
+        margin: 16,
         textAlign: 'center',
     },
     button: {
-        margin: 32,
-    },
-    contentView: {
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: 32,
+        margin: 48,
     },
 });
 
-class ErrorPage extends Component {
+class ErrorScreen extends React.Component {
     props: PropsType
-
-    renderGeneralError = (): any => (
-        <View style={styles.contentView}>
-            <Image
-                source={img('fail_graphic')}
-            />
-            <Text style={styles.title}>Error Found</Text>
-            <Text style={styles.subTitle}>Error Details</Text>
-        </View>
-    );
 
     render(): any {
         return (
             <View style={styles.container}>
-                {this.renderGeneralError()}
+                <View style={styles.contentView}>
+                    <Text style={styles.title}>Error Found</Text>
+                    <Text style={styles.subTitle}>Error Details</Text>
+                </View>
                 <Button
                     style={styles.button}
-                    title="Retry"
+                    text="Retry"
                     onPress={this.props.onRetry}
-                    backgroundColor={Theme.buttonPrimaryBackgroundColor}
                 />
             </View>
         );
     }
 }
 
-export default ErrorPage;
+export default ErrorScreen;
