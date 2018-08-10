@@ -6,4 +6,12 @@ export const colors = {
     buttonText: '#FFFFFF',
     inputBackground: '#FFFFFF',
     inputDivider: '#E4E2E5',
-  };
+};
+
+export const fontSize = {
+    s: 8,
+    m: 12,
+    l: 20,
+    xl: 24,
+    xxl: 30,
+};
