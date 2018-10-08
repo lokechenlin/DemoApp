@@ -51,7 +51,8 @@ https://github.com/master-atul/react-native-exception-handler
 - Navigation
 - Define Folder Structure
 - General Error Handling
--- Authentication
+-- Able to refresh on error Page
+-- Authentication - Add Auth Stack
 
 
 
